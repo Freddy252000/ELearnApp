@@ -17,6 +17,11 @@ import streamIcon from './images/streamIcon.png';
 import exploreIcon from './images/exploreIcon.png';
 import classWorkIcon from './images/classWorkIcon.png';
 import funnel from './images/funnel.png';
+import List from './images/List.jpg';
+import Grand from './images/Grand.jpg';
+import OnlineLearningImage from './images/OnlineLearningImage.jpg';
+import VirtualClassroomImage from './images/VirtualClassroomImage.jpg';
+import ProgressTrackingImage from './images/ProgressTrackingImage.jpg';
 
 export const images = {
   microscope,
@@ -26,6 +31,11 @@ export const images = {
   signin,
   signup,
   welcome,
+  List,
+  Grand,
+  OnlineLearningImage,
+  ProgressTrackingImage,
+  VirtualClassroomImage,
   school1,
   school2,
   school3,

@@ -16,6 +16,7 @@
 //   LearnMoreLinks,
 //   ReloadInstructions,
 // } from 'react-native/Libraries/NewAppScreen';
+// import AppNavigation from './src/navigator/AppNavigation';
 
 // type SectionProps = PropsWithChildren<{
 //   title: string;
@@ -54,50 +55,45 @@
 //     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
 //   };
 
-//   /*
-//    * To keep the template simple and small we're adding padding to prevent view
-//    * from rendering under the System UI.
-//    * For bigger apps the reccomendation is to use `react-native-safe-area-context`:
-//    * https://github.com/AppAndFlow/react-native-safe-area-context
-//    *
-//    * You can read more about it here:
-//    * https://github.com/react-native-community/discussions-and-proposals/discussions/827
-//    */
 //   const safePadding = '5%';
 
 //   return (
-//     <View style={backgroundStyle}>
-//       <StatusBar
-//         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-//         backgroundColor={backgroundStyle.backgroundColor}
-//       />
-//       <ScrollView style={backgroundStyle}>
-//         <View style={{paddingRight: safePadding}}>
-//           <Header />
-//         </View>
-//         <View
-//           style={{
-//             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-//             paddingHorizontal: safePadding,
-//             paddingBottom: safePadding,
-//           }}>
-//           <Section title="Step One">
-//             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-//             screen and then come back to see your edits.
-//           </Section>
-//           <Section title="See Your Changes">
-//             <ReloadInstructions />
-//           </Section>
-//           <Section title="Debug">
-//             <DebugInstructions />
-//           </Section>
-//           <Section title="Learn More">
-//             Read the docs to discover what to do next:
-//           </Section>
-//           <LearnMoreLinks />
-//         </View>
-//       </ScrollView>
-//     </View>
+//     <>
+//       <StatusBar barStyle="dark-content" />
+//       <AppNavigation />
+//     </>
+//     // <View style={backgroundStyle}>
+//     //   <StatusBar
+//     //     barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+//     //     backgroundColor={backgroundStyle.backgroundColor}
+//     //   />
+//     //   <ScrollView style={backgroundStyle}>
+//     //     <View style={{paddingRight: safePadding}}>
+//     //       <Header />
+//     //     </View>
+//     //     <View
+//     //       style={{
+//     //         backgroundColor: isDarkMode ? Colors.black : Colors.white,
+//     //         paddingHorizontal: safePadding,
+//     //         paddingBottom: safePadding,
+//     //       }}>
+//     //       <Section title="Step One">
+//     //         Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+//     //         screen and then come back to see your edits.
+//     //       </Section>
+//     //       <Section title="See Your Changes">
+//     //         <ReloadInstructions />
+//     //       </Section>
+//     //       <Section title="Debug">
+//     //         <DebugInstructions />
+//     //       </Section>
+//     //       <Section title="Learn More">
+//     //         Read the docs to discover what to do next:
+//     //       </Section>
+//     //       <LearnMoreLinks />
+//     //     </View>
+//     //   </ScrollView>
+//     // </View>
 //   );
 // }
 
@@ -127,8 +123,6 @@ import {useEffect, useState} from 'react';
 import {StatusBar} from 'react-native';
 import {Text, View} from 'react-native';
 import React from 'react';
-import SplashScreen from 'react-native-splash-screen';
-import WelcomeScreen from './src/screens/Welcome/WelcomeScreen';
 
 const App = () => {
   // useEffect(() => {
@@ -140,8 +134,8 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      {/* <AppNavigation /> */}
-      <WelcomeScreen />
+      <AppNavigation />
+      {/* <WelcomeScreen /> */}
     </>
   );
 };

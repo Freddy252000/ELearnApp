@@ -4,8 +4,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import HomeScreen from '../screens/HomeScreen';
 import WelcomeScreen from '../screens/Welcome/WelcomeScreen';
-// import LoginScreen from '../screens/Login/Loginscreen';
-// import SignUpScreen from '../screens/Signup/SignUpScreen';
+import LoginScreen from '../screens/Login/Loginscreen';
+import SignUpScreen from '../screens/Signup/SignUpScreen';
 // import SelectGradeScreen from '../screens/SelectGradeScreen';
 // import SelectProvinceScreen from '../screens/SelectProvinceScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -30,10 +30,9 @@ export default function AppNavigation() {
         <Stack.Screen
           name="Welcome"
           options={{headerShown: false}}
-          component={() => <Text>It works!</Text>}
-          // component={WelcomeScreen}
+          component={WelcomeScreen}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name="SignIn"
           options={{headerShown: false}}
           component={LoginScreen}
@@ -42,7 +41,7 @@ export default function AppNavigation() {
           name="SignUp"
           options={{headerShown: false}}
           component={SignUpScreen}
-        /> */}
+        />
         {/* <Stack.Screen
           name="SelectGrade"
           options={{ headerShown: false }}
